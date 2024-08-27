@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h2> 
+        <a href="/">
+             <p style="text-align: center;"> Diabetes Prediction</p>
+        </a>
+    </h2>
+    <h2>Results:</h2>
+
+    {% if prediction == 1%}
+    <h2 style="color:red;">
+        Chances of having Diabetes is more, please consult a Doctor.
+    </h2>
+    <p style="text-align: center;">
+        <img src="">
+    </p>
+
+    {% elif prediction == 0%}
+    <h2 style="color:red;">
+        NO Worries!! You don;t have Diabetes.
+    </h2>
+    <p style="text-align: center;">
+        <img src="">
+    </p>
+    {% endif %}
+
+</body>
+</html>
